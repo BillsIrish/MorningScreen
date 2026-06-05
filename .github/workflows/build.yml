@@ -28,7 +28,7 @@ jobs:
       - name: Build APK
         run: |
           echo "sdk.dir=$ANDROID_HOME" > local.properties
-          gradle assembleDebug
+          gradle :app:assembleDebug
 
       - uses: actions/upload-artifact@v4
         with:
